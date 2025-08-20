@@ -7,7 +7,7 @@ const PORT = process.env.PORT || 8080;
 
 // Use Render's DATABASE_URL or local fallback
 const pool = new Pool({
-  connectionString: process.env.DATABASE_URL || "postgresql://admin:SWy4Z7TM0gSzZsAc3ajVTJzhAXrwSbnc@dpg-d2il12hr0fns738ke3ug-a/lorryoil",
+  connectionString: process.env.DATABASE_URL || "postgresql://admin:SWy4Z7TM0gSzZsAc3ajVTJzhAXrwSbnc@dpg-d2il12hr0fns738ke3ug-a.singapore-postgres.render.com/lorryoil",
   ssl: process.env.NODE_ENV === "production" ? { rejectUnauthorized: false } : false,
 });
 
